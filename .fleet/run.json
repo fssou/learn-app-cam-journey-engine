@@ -1,0 +1,20 @@
+{
+  "configurations": [
+    {
+      "type": "maven",
+      "name": "compile",
+      "tasks": [
+        "compile"
+      ],
+    },
+    {
+      "type": "spring-boot",
+      "name": "journey-engine",
+      "mainClass": "in.francl.learn.cam.journey.engine.Application",
+      "module": "journey-engine",
+      "dependsOn": [
+        "compile"
+      ],
+    }
+  ]
+}
